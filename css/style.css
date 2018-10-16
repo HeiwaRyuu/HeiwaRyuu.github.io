@@ -247,6 +247,23 @@ footer{
 
 /* Medias */
 
+@media (max-width: 600px){
+    .top{
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+}
+
 @media (max-width: 900px){
     .info ul{
         flex-direction: column;
