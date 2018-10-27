@@ -23,17 +23,52 @@
         </div>
     </header>
 
-    <section id="login">
-        <div class="login">
-            <div class="loginformtxt"><p>Faça parte dos templários!</p></div>
-            <div class="login_data">
-                <p>Usuário:</p>
-                <input class="UsernamePassword" id="username" type="text" placeholder="Usuário"><br>
-                <p>Senha:</p>
-                <input class="UsernamePassword" id="password" type="password" placeholder="Senha"><br>
+    <section>
+        <div class="registerWrapper" id="registerWrapper">
+            <div class="register">
+                <div class="registerTitle">
+                    <h2>Registre-se!</h2>
+                </div>
+                <div class="login">
+                    <h3>Login:</h3>
+                </div>
+                <input type="text" placeholder="Entre com seu Login">
+                <div class="senha">
+                    <h3>Senha:</h3>
+                </div>
+                <input type="password" placeholder="Entre com sua senha">
+                <div class="senha1">
+                    <h3>Confirmar senha:</h3>
+                </div>
+                <input type="password" placeholder="Confirme sua senha">
+                <button class="registerbtn">Cadastrar</button>
+                <div class="fazerLogin" id="fazerLogin">
+                    <h5>Fazer Login</h5>
+                </div>
             </div>
-            <button class="btn" onclick="login()">Login</button>
+        </div>  
+        </section>
+
+    <section>
+    <div class="loginWrapper" id="loginWrapper">
+        <div class="Login">
+            <div class="loginTitle">
+                <h2>Realize seu Login!</h2>
+            </div>
+            <div class="loginLogin">
+                <h3>Login:</h3>
+            </div>
+            <input type="text" placeholder="Login" id="username">
+            <div class="senhaLogin">
+                <h3>Senha:</h3>
+            </div>
+            <input type="password" placeholder="Senha" id="password">
+            <button class="loginbtn" onclick="login()">Fazer Login</button>
+            <div class="fazerRegistro" id="fazerRegistro">
+                <h5>Registre-se</h5>
+            </div>
         </div>
+    </div>
     </section>
 
     <footer>

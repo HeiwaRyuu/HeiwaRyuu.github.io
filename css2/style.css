@@ -75,65 +75,177 @@ p{
     border-bottom: 2px solid #fff; 
 }
 
-/* Login */
+/* Register */
 
-#login {
-    width: 100%;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+.registerWrapper{
+    display: none;
 }
 
-.loginformtxt p{
-    font-size: 26px;
-    color: #F95000;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+.register{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    margin-top: 20%;
+    margin-left: 50%;
+    transform: translate(-50%,-20%);
+    border: 1px solid grey;
+    box-shadow: 0 5px 20px #fff;
 }
 
-.UsernamePassword{
-  border: none;
-  border-radius: 2px;
-  padding: 20px;
-  margin: 5px;
+.registerTitle{
+    color: orangered;
+    text-align: center;
+    flex: 1;
 }
 
 .login{
+    color: orangered;
+    text-align: center;
+    flex: 1;
+}
+
+.senha{
+    color: orangered;
+    text-align: center;
+    flex: 1;
+}
+
+.senha1{
+    color: orangered;
+    text-align: center;
+    flex: 1;
+}
+
+input{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    flex: 1;
+}
+
+.registerbtn{
+    height: 80px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+}
+
+.registerbtn:hover{
+    background-color: #000;
+    color: orangered;
+}
+
+.fazerLogin{    
+    flex: 1;
+}
+
+.fazerLogin>h5{
+    color: orangered;
+    font-size: 16px;
+    margin-left: 300px;
+}
+
+.fazerLogin>h5:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Login */
+
+.loginWrapper{
+    display: block;
+}
+
+.Login{
     display: flex;
     flex-direction: column;
-    border: 3px solid white;
-    padding: 30px;
-    margin-top: 30%;
-    margin-bottom: 20%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px 5px #f2e1f2;
+    width: 400px;
+    height: 600px;
+    margin-top: 20%;
+    margin-left: 50%;
+    transform: translate(-50%,-20%);
+    border: 1px solid grey;
+    box-shadow: 0 5px 20px #fff;
 }
 
-.login p{
-    color: #F95000;
-    font-weight: bold;
-}
-
-.btn{
-     border: none;
-     border-radius: 5px;
-     padding: 20px;
-     margin: 10px;   
-     background-color: #F95000;
-     min-width: 100px;
+.loginTitle{
+    font-size: 22px;
+    color: orangered;
     text-align: center;
-    color: aliceblue;
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-    align-self: stretch;
-    outline: none;
+    flex: 1;
 }
 
-.btn:hover{
-    opacity: 0.7;
+.loginLogin{
+    font-size: 22px;
+    color: orangered;
+    text-align: center;
+    flex: 1;
+}
+
+.senhaLogin{
+    font-size: 22px;
+    color: orangered;
+    text-align: center;
+    flex: 1;
+}
+
+.senha1{
+    color: orangered;
+    text-align: center;
+    flex: 1;
+}
+
+input{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    flex: 0.5;
+}
+
+.loginbtn{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 0.7;
+}
+
+.loginbtn:hover{
+    background-color: #000;
+    color: orangered;
+}
+
+.fazerRegistro{
+    margin-top: 20px;    
+    flex: 1;
+}
+
+.fazerRegistro>h5{
+    color: orangered;
+    font-size: 16px;
+    margin-left: 280px;
+}
+
+.fazerRegistro>h5:hover{
+    cursor: pointer;
+    color: #fff;
 }
 
 /* Footer */
@@ -158,6 +270,21 @@ footer{
 
 
 /* Medias */
+
+@media(max-width: 950px){
+
+    .register{
+        margin-top: 20%;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+
+    .Login{
+        margin-top: 20%;
+        margin-left: 50%;
+        transform: translate(-50%); 
+    }
+}
 
 @media(max-width: 750px){
     #menu{

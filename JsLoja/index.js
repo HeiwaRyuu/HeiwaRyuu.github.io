@@ -91,7 +91,7 @@ function remove2(){
 }
 
 function remove3(){
-    if(quantidade2==0){
+    if(quantidade3==0){
         alert("Não há nenhum Elmo de Batalha na sacola!");
     }
     else{
@@ -103,7 +103,7 @@ function remove3(){
 }
 
 function remove4(){
-    if(quantidade2==0){
+    if(quantidade4==0){
         alert("Não há nenhuma Espada Medieval na sacola!");
     }
     else{
