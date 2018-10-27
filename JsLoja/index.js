@@ -138,6 +138,7 @@ function compra(){
         document.getElementById("item2").innerHTML= quantidade2;
         document.getElementById("item3").innerHTML= quantidade3;
         document.getElementById("item4").innerHTML= quantidade4;
+        alert("Compra realizada com sucesso!");
     }
 }
 
