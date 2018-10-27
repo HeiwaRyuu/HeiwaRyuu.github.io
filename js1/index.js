@@ -18,8 +18,9 @@ function abrirLog(){
 abrirRegistro.addEventListener("click", abrirReg);
 abrirLogin.addEventListener("click", abrirLog);
 
+
 // Brincadeira exemplo de interação de login
-function login(){
+function lo(){
     var user = document.getElementById("username");
     var password = document.getElementById("password");
 
@@ -44,4 +45,5 @@ function login(){
     else{
         alert("Você entrou com uma senha ou usuário invalido! Tente novamente.");
     }
+
 }
