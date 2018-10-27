@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css3/style.css">
+</head>
+<body>
+    <header id="header">
+        <div id="top">
+        <div id="templarios">
+            <h1>Loja Templários</h1>
+        </div>
+        <ul id="menu">
+             <a href="index.html"><li>Home</li></a>
+             <a href="imagens.html" target="_blank"><li>Imagens</li></a>
+             <a href="login.html"><li>Login</li></a>
+             <a href="index.html#git"><li>Contato</li></a>
+             <a href="loja.html"><li>Loja</li></a>
+        </ul>
+        </div>
+    </header>
+
+    <section>
+    <div id="balanco-wrapper">
+        <div class="carrinho"><button class="abre" onclick="abre()">Seu Carrinho </button><h2><i class="fas fa-shopping-cart"> :</i></h2> <h2 id="total"></h2><h2 class="sifra1">$</h2></div>
+        <div class="balanco"><h2><i class="fas fa-money-bill-alt"></i> :</h2> <h2 id="valor"></h2><h2 class="sifra">$</h2></div>
+    </div>
+    <div id="carrinhoLojaWrapper">
+    <div class="carrinhoLoja">
+            <div class="voltar" onclick="voltar()"><button>Voltar</button></div>
+            <div class="titulo"><h1>Carrinho da Loja Templária</h1></div>
+            <div class="item1"><h4>Anel da Ordem Templária: x </h4><h4 id="item1"></h4></div>
+            <div class="botao0 botao1"><button onclick="remove1()">Remover Item</button></div>
+            <div class="item1"><h4>Colar Cruz Templária: x </h4><h4 id="item2"></h4></div>
+            <div class="botao0 botao2"><button onclick="remove2()">Remover Item</button></div>
+            <div class="item1"><h4>Elmo de Batalha: x </h4><h4 id="item3"></h4></div>
+            <div class="botao0 botao3"><button onclick="remove3()">Remover Item</button></div>
+            <div class="item1"><h4>Espada Medieval: x </h4><h4 id="item4"></h4></div>
+            <div class="botao0 botao4"><button onclick="remove4()">Remover Item</button></div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="item-wrapper">
+            <div class="item">
+                <div class="titulo"><h1>Anel da Ordem Templária</h1></div>
+                <div class="imagem imagem0"></div>
+                <div class="preco"><h2>Valor: <h2 class="preco1">80</h2><h2 class="sifra1">$</h2></h2></div>
+                <div class="botao" id="btn1"><button>Adicionar</button></div>
+            </div>
+            
+            <div class="item">
+                <div class="titulo"><h1>Colar Cruz Templária</h1></div>
+                <div class="imagem imagem1"></div>
+                <div class="preco"><h2>Valor: <h2 class="preco2">30</h2><h2 class="sifra1">$</h2></h2></div>
+                <div class="botao" id="btn2"><button>Adicionar</button></div>
+            </div>
+            
+            <div class="item">
+                <div class="titulo"><h1>Elmo de Batalha</h1></div>
+                <div class="imagem imagem2"></div>
+                <div class="preco"><h2>Valor: <h2 class="preco3">60</h2><h2 class="sifra1">$</h2></h2></div>
+                <div class="botao" id="btn3"><button>Adicionar</button></div>
+            </div>
+                    
+            <div class="item">
+                <div class="titulo"><h1>Espada Medieval</h1></div>
+                <div class="imagem imagem3"></div>
+                <div class="preco"><h2>Valor: <h2 class="preco4">300</h2><h2 class="sifra1">$</h2></h2></div>
+                <div class="botao" id="btn4"><button>Adicionar</button></div>
+            </div>
+        </div>    
+        <button id="fimCompra">Finalizar Compra</button>
+    </section>
+
+    <section>
+        <div id="divisaDeposito"><h1>Sem dinheiro?! Realize Um Depósito!</h1></div>
+    </section>
+
+    <section>
+        <div id="deposito">
+            <div id="textoDeposito"><h4>Digite a quantia do depósito:</h4></div>
+            <input id="dep" type="text">
+            <div id="fazerDeposito"><button onclick="deposito()">Depositar</button></div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="git"><a href="https://github.com/HeiwaRyuu" target="_blank">GitHub:HeiwaRyuu</a></div>
+        <div id="name"><a href="https://github.com/HeiwaRyuu" target="_blank">HeiwaRyuu &copy;</a></div>
+    </footer>
+    
+</body>
+<script src="JsLoja/index.js" type="text/javascript"></script>
+</html>

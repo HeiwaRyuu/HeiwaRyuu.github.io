@@ -1,0 +1,483 @@
+:root{
+    --shadow: 0 05px 40px #565656;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: orangered;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #fff;
+}
+
+/* Menu da loja */
+
+#header{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#top{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 220px;
+    background: #000;
+    border-bottom: 5px solid orangered;
+}
+
+#menu{
+    list-style: none;
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    padding: 0;
+    flex: 1;
+}
+
+#templarios{
+    padding: 0;
+    font-size: 25px;
+    color: orangered;
+    font-weight: bold;
+    text-align: center;
+}
+
+#menu>a{
+    color: orangered;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+#menu>a:hover{
+    color: #fff;
+    border-bottom: 2px solid #fff; 
+}
+
+/* Balanço wrapper */
+
+.abre{
+    outline: none;
+    border: none;
+    background-color: orangered;
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.abre:hover{
+    background-color: #fff;
+    color: orangered;
+    cursor: pointer;
+}
+
+.carrinho{
+    flex: 10;
+    margin-left: 30px;
+    color: orangered;
+    display: flex;
+    cursor: pointer;
+}
+
+#total{
+    color: orangered;
+}
+
+.sifra{
+    color: orangered;
+    flex: 1;
+}
+
+.balanco{
+    display: flex;
+    color: orangered;
+    flex: 1;
+}
+
+#balanco-wrapper{
+    background-color: #000;
+    display: flex;
+}
+
+
+
+/* Item wrapper */
+
+#item-wrapper{ 
+    width: 90%;
+    transform: translateX(5%);
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr)); 
+}
+
+/* Item */
+
+.item{
+    margin: 5px;
+    width: 300px;
+    height: 500px;
+    background: aliceblue;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    align-self: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+    border: 2px solid grey;
+}
+
+.titulo{
+    flex: 1;
+    text-align: center;
+}
+
+.imagem{
+    height: 300px;
+    width: 250px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-self: center;
+    border: 2px solid grey;
+    flex: 3;
+}
+
+.imagem0{
+    background-image: url("../imagesLoja/imagem1.jpg");
+}
+
+.imagem1{
+    background-image: url("../imagesLoja/imagem2.jpg");
+}
+
+.imagem2{
+    background-image: url("../imagesLoja/imagem3.jpg");
+}
+
+.imagem3{
+    background-image: url("../imagesLoja/imagem4.jpg");
+}
+
+.preco{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+}
+
+.botao{
+    display: flex;
+    align-self: center;
+    padding: 30px;
+}
+
+.botao>button{
+    border:none;
+    outline: none;
+    background-color: orangered;
+    color: #fff;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.botao>button:hover{
+    color: orangered;
+    background-color: #000;
+    cursor: pointer;
+}
+
+/* Fim do item */
+
+/* Carrinho Loja */
+
+.voltar>button{
+    min-width: 60px;
+    min-height: 30px;
+    border: none;
+    outline: none;
+    background-color: orangered;
+    color: #fff;
+    font-weight: bold;
+}
+
+.voltar>button:hover{
+    background-color: #000;
+    color: orangered;
+    cursor: pointer;
+}
+
+#carrinhoLojaWrapper{
+   padding: 0;
+   margin: 0;
+   display: none;
+}
+
+.carrinhoLoja{
+    display: flex;
+    align-self: center;
+    padding: 30px;
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    height: 600px;
+    background: aliceblue;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    margin-top: 15%;
+    transform: translate(-50%,-50%);
+    box-shadow: var(--shadow);
+}
+
+.titulo{
+    font-size: 25px;
+}
+
+.item1{
+    display: flex;
+    align-self: center;
+    padding: 5px;
+}
+
+.item2{
+    display: flex;
+    align-self: center;
+    padding: 5px;
+}
+
+.item3{
+    display: flex;
+    align-self: center;
+    padding: 5px;
+}
+
+.item4{
+    display: flex;
+    align-self: center;
+    padding: 5px;
+}
+
+
+
+.botao0>button{
+    margin-left: 50%;
+    transform: translate(-50%);
+    border:none;
+    outline: none;
+    background-color: orangered;
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botao0>button:hover{
+    background-color: #000;
+    color: orangered;
+    cursor: pointer;
+}
+
+/* Fim Carrinho Loja */
+
+/* Fim Compra */
+
+#fimCompra{
+    padding: 0;
+    position: relative;
+    width: 150px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%);
+    cursor: pointer;
+    border-radius: 3px
+}
+
+#fimCompra:hover{
+    color: orangered;
+    background-color: #000;
+    cursor: pointer;
+}
+
+/* Divisa Depósito */
+
+#divisaDeposito{
+    width: 100%;
+    min-height: 80px;
+    margin-top: 30px;
+    background-color: #000; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid orangered;
+    border-bottom: 3px solid orangered;
+}
+
+#divisaDeposito>h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: orangered;
+}
+
+/* Depósito */
+
+#deposito{
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    min-height: 100px;
+    background-color: orangered;
+    box-shadow: var(--shadow);
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 30px;
+    flex: 1;
+}
+
+#textoDeposito{
+    margin-left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+input{
+    height: 30px;
+    width: 80%;
+    padding: 0;
+    margin:0;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+
+#fazerDeposito>button{
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 80px;
+    background-color: #fff;
+    color: orangered;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 30px;
+}
+
+#fazerDeposito>button:hover{
+    background-color: #000;
+    cursor: pointer;
+}
+
+#fazerDeposito{
+    margin-top: 40px;
+}
+
+/* Footer */
+
+footer{
+    padding: 30px;
+    background-color: #000;
+    margin-top: 30px;
+    display: flex;
+}
+
+#git{
+    text-align: center;
+    flex:1;
+}
+
+#name{
+    text-align: center;
+    flex:1;
+}
+
+/* Medias */
+
+@media(max-width: 1125px){
+
+    #deposito{
+        flex-direction: column;
+    }
+
+    #textoDeposito{
+        margin-left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+
+    #fazerDeposito>button{
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-bottom: 30px;
+    }
+
+    input{
+        width: 80%;
+        padding: 0;
+        margin:0;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .carrinho{
+        flex: 5;
+    }
+
+    #textoDeposito{
+        margin-top: 5%;
+    }
+}
+
+@media(max-width: 635px){
+    .carrinho{
+        flex: 2;
+    }
+}
+
+@media(max-width: 750px){
+    #menu{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #menu>a{
+        margin: 0;
+        text-align: center;
+        width: 100%;   
+    }
+    #menu>a:hover{
+        border-bottom: 2px solid #fff; 
+    }
+}

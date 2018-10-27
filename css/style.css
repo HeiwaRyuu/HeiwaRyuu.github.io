@@ -32,55 +32,53 @@ p{
     font-size: 19px;
 }
 
-/* Cabeçalho */
+/* Menu da loja */
 
-header{
-    margin:0;
-    padding: 0;
-}
-
-
-.top {
+#header{
     padding: 0;
     margin: 0;
-    width: 100%;
-    min-height: 100px;
-    background-color: #0C0C0C;
-    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-
-.top h1{
-    color: #F95000;
-    font-size: 3em;
-    flex: 1;
-}
-
-.espaco{
-    flex:2;
-}
-
-.menu{
-    flex: 1;
-}
-
-.menu ul{
-    padding: 0;
+#top{
     margin: 0;
-    text-decoration: none;
+    padding: 0;
+    width: 100%;
+    min-height: 220px;
+    background: #000;
+    border-bottom: 5px solid orangered;
+}
+
+#menu{
     list-style: none;
     display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    padding: 0;
+    flex: 1;
 }
 
-.menu ul a{
-    margin-right: 70px;
-    text-decoration: none;
-    font-size: 2em;
+#templarios{
+    padding: 0;
+    font-size: 25px;
+    color: orangered;
     font-weight: bold;
-    margin-top: 20px;
+    text-align: center;
+}
+
+#menu>a{
+    color: orangered;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+#menu>a:hover{
+    color: #fff;
+    border-bottom: 2px solid #fff; 
 }
 
 /* Seção imagem top */
@@ -246,6 +244,23 @@ footer{
 
 
 /* Medias */
+
+@media(max-width: 750px){
+    #menu{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #menu>a{
+        margin: 0;
+        text-align: center;
+        width: 100%;   
+    }
+    #menu>a:hover{
+        border-bottom: 2px solid #fff; 
+    }
+}
 
 @media (max-width: 600px){
     .top{
